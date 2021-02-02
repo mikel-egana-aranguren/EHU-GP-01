@@ -1,0 +1,3 @@
+[submodule "PlanificacionTemporal/ShowerTemplate"]
+	path = PlanificacionTemporal/ShowerTemplate
+	url = https://github.com/mikel-egana-aranguren/ShowerTemplate.git
