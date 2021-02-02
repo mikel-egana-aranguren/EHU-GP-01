@@ -1,1 +1,78 @@
-shower/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Planificación Temporal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Planificación Temporal</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Gestión de Proyectos (GP)</h2>
+        <h3>Planificación Temporal: Gantt, PERT, CPM</h3>
+        <p>Mikel Egaña Aranguren (<a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a>)</p>
+        <!-- <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p> -->
+        <img src="pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">https://github.com/mikel-egana-aranguren/EHU-GP-01</a></p>
+        <img src="pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal</h2>
+        <p>Ya sabemos:
+            <ul>
+                <li>Qué tareas hay que realizar</li>
+                <li>Cuánto tiempo necesitamos para cada tarea</li>
+                <li>Quién va a realizar cada tarea</li>
+            </ul>
+        </p>
+        <p>¿Cómo las distribuimos en el tiempo?</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <img src="../pictures-gp-01/Ganttproject-house-building-sample.png" alt="Diagrama de Gantt" width="50%" border="1px solid #555"> <p style="text-align:right;font-size:30%;"><a href="https://commons.wikimedia.org/w/index.php?curid=10593040">De GanttProject Developers - GanttProject Developers, CC BY-SA 3.0</a></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <p>Cuadro bidimensional:
+            <ul>
+                <li>Eje horizontal: tiempo</li>
+                <li>Eje vertical: tareas</li>
+                <li>Tarea: bloque rectangular (longitud = duración)</li>
+                <li>Posición del bloque: inicio y fin de tarea</li>
+            </ul>
+        </p>
+    </section>
+
+
+
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
