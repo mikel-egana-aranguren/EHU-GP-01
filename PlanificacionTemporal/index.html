@@ -52,14 +52,76 @@
 
     <section class="slide" id="cover">
         <h2>Diagrama de Gantt</h2>
-        <p>Cuadro bidimensional:
+        <ul>
+        <li>Cuadro bidimensional:
             <ul>
                 <li>Eje horizontal: tiempo</li>
                 <li>Eje vertical: tareas</li>
                 <li>Tarea: bloque rectangular (longitud = duración)</li>
                 <li>Posición del bloque: inicio y fin de tarea</li>
             </ul>
-        </p>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Diagrama de Gantt</h2>
+        <ul>
+        <li>Sólo representa la elección del autor</li>
+        <li>No refleja (ni justifica ni permite conocer):
+            <ul>
+                <li>Orden óptimo de las actividades</li>
+                <li>Plazo mínimo de ejecución del proyecto</li>
+                <li>Efectos de retrasos</li>
+            </ul>
+        <li>Para ello se usan técnicas de planificación como PERT, CPM, ROY, Precedencias, ...</li>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Técnicas de planificación: Objetivos</h2>
+        <ul>
+        <li>Determinar qué tareas son necesarias y cuándo</li>
+        <li>Buscar el plazo mínimo de ejecución del proyecto</li>
+        <li>Buscar ligaduras temporales entre tareas</li>
+        <li>Identificar las tareas críticas (Si se retrasan, afectan a todo el proyecto)</li>
+        <li>Identificar el camino crítico (Formado por tareas críticas)</li>
+        <li>Detectar holguras (Tiempo que puede retrasarse una tarea sin afectar al proyecto)</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT (Program Evaluation and Review Techniques)</h2>
+        <ul>
+        <li>Hay que ordenar las tareas:
+            <ul>
+                <li>¿Qué se puede hacer ahora?</li>
+                <li>¿Qué tiene que estar hecho ya?</li>
+                <li>¿Qué podría hacerse a la vez?</li>
+                <li>¿Qué debe ser lo siguiente?</li>
+            </ul>  
+        </li>  
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT (Program Evaluation and Review Techniques)</h2>
+        <ul> 
+        <li>El resultado es un grafo donde:
+            <ul>
+                <li>Los nodos representan momentos en el tiempo (sucesos)</li>
+                <li>Los arcos representan tareas (Cada tarea aparece una única vez en el grafo) </li>
+                <li>Sólo puede haber un arco (directo) entre dos nodos</li>
+            </ul>
+        </li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>PERT: Tipos de Precedencias</h2>
+
+        <img src="pictures-gp-01/precedencia-lineal.png" alt="Tipos de precedencias" width="75%">
     </section>
 
 
