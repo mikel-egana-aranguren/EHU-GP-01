@@ -10,6 +10,11 @@
             --slide-ratio: calc(16 / 9);
         }
     </style>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 <body class="shower list">
 
@@ -160,6 +165,13 @@
 
     <section class="slide" id="cover">
         <h2>Ejemplo</h2>
+        <p>Calcular holgura total</p>
+        <p>Calcular holgura libre</p>
+        <p>Encontrar camino crítico</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Ejemplo</h2>
         <p>Asumimos un proyecto con las precedencias:</p>
         <img src="pictures-gp-01/EjemploProyectoPERT.png" alt="Ejemplo Proyecto PERT" width="30%">
     </section>
@@ -173,6 +185,28 @@
         <h2>Ejemplo</h2>
         <p>Grafo de dependencias</p>
         <img src="pictures-gp-01/GrafoEjemploProyecto.png" alt="Grafo Ejemplo Proyecto PERT" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Ejemplo</h2>
+        <p>Numerar los nodos de izquierda a derecha y de arriba abajo</p>
+        <img src="pictures-gp-01/GrafoNumeradoEjemploProyecto.png" alt="Grafo Numerado Ejemplo Proyecto PERT" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Ejemplo</h2>
+        <p>Calcular duración de cada actividad</p>
+        
+        <p>\[ D = {E_O+4E_M+E_P \over 6} \]</p>
+
+        <p>
+            <ul>
+                <li>E<sub>O</sub> = Estimación optimista</li>
+                <li>E<sub>M</sub> = Estimación más probable (modal)</li>
+                <li>E<sub>P</sub> = Estimación pesimista</li>
+            </ul>
+        </p>
+
     </section>
 
     <footer class="badge">
