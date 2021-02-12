@@ -164,37 +164,37 @@
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Calcular holgura total</p>
         <p>Calcular holgura libre</p>
         <p>Encontrar camino crítico</p>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Asumimos un proyecto con las precedencias:</p>
         <img src="pictures-gp-01/EjemploProyectoPERT.png" alt="Ejemplo Proyecto PERT" width="30%">
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>[<b>Tarea</b>] Construir grafo de dependencias</p>
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Grafo de dependencias</p>
         <img src="pictures-gp-01/GrafoEjemploProyecto.png" alt="Grafo Ejemplo Proyecto PERT" width="80%">
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Numerar los nodos de izquierda a derecha y de arriba abajo</p>
         <img src="pictures-gp-01/GrafoNumeradoEjemploProyecto.png" alt="Grafo Numerado Ejemplo Proyecto PERT" width="80%">
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Calcular duración de cada actividad</p>
         
         <p>\[ D = {E_O+4E_M+E_P \over 6} \]</p>
@@ -209,10 +209,37 @@
     </section>
 
     <section class="slide" id="cover">
-        <h2>Ejemplo</h2>
+        <h2>Planificación (PERT)</h2>
         <p>Añadir duración a cada actividad:</p>
-        <img src="pictures-gp-01/CuadroDuraciones.png" alt="Cuadro Duraciones Ejemplo Proyecto PERT" width="20%">
-        <img src="pictures-gp-01/GrafoDuracionesEjemploProyecto.png" alt="Grafo Duraciones Ejemplo Proyecto PERT" width="60%">
+        <p><img src="pictures-gp-01/CuadroDuraciones.png" alt="Cuadro Duraciones Ejemplo Proyecto PERT" width="20%"></p>
+        <p><img src="pictures-gp-01/GrafoDuracionesEjemploProyecto.png" alt="Grafo Duraciones Ejemplo Proyecto PERT" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT)</h2>
+        <p>Para cada suceso, calcular:</p>
+        <p>
+            <ul>
+                <li>Earliest Event Time (EET)</li>
+                <li>Latest Event Time</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): EET</h2>
+        <p>Para cada suceso, calcular:</p>
+        <p>
+            <ul>
+                <li>El EET del suceso inicial es 0</li>
+                <li>Para el resto de sucesos:
+                    <ul>
+                        <li>Para cada actividad que llega al suceso, sumar la duración de la actividad y el EET del suceso del que sale</li>
+                        <li>Seleccionar el mayor EET que se haya obtenido</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
     </section>
 
     <footer class="badge">
