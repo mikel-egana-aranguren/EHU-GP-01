@@ -25,7 +25,7 @@
 
     <section class="slide" id="cover">
         <h2>Gestión de Proyectos (GP)</h2>
-        <h3>Planificación Temporal: Gantt, PERT, CPM</h3>
+        <h3>Planificación Temporal: Gantt, PERT, CPM, ROY, Precedencias</h3>
         <p>Mikel Egaña Aranguren (<a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a>)</p>
         <!-- <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p> -->
         <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
@@ -312,6 +312,52 @@
         <p>CPM parte de un sólo tiempo como duración de actividad, mientras que PERT se basa en tres estimaciones</p>
         <p>CPM es determinista y PERT probabilístico</p>
     </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: ROY</h2>
+        <p>También se construye un grafo, pero:
+            <ul>
+                <li>Los nodos son las actividades</li>
+                <li>Los arcos representan las precedencias</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY): Tipos de Precedencias</h2>
+        <img src="pictures-gp-01/ROYTiposPrecedencias.png" alt="Tipos de precedencias ROY" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY): Tipos de Precedencias</h2>
+        <p>Para construir el grafo hay que incluir 2 actividades adicionales:
+            <ul>
+                <li>Actividad de inicio</li>
+                <li>Actividad de fin</li>
+            </ul>
+        </p>
+        <p>Si sólo hay una actividad real que pueda ser la primera, no incluimos la de inicio. Si sólo hay una actividad real que pueda ser la última, no incluimos la de fin</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY): Tipos de Precedencias</h2>
+        <p>ROY también usa la tabla de precedencias o la matriz de encadenamientos</p>
+        <img src="pictures-gp-01/MatrizEncadenamientos.png" alt="MAtriz encadenamientos" width="80%">
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>Cada nodo se representa mediant un cuadrado, donce:
+            <ul>
+                <li>1: código de actividad</li>
+                <li>2: Tiempo mínimo de comienzo (t)</li>
+                <li>3: Tiempo máximo de comienzo (T)</li>
+                <li>4: Duración de la actividad ()</li>
+            </ul>
+        </p>
+    </section>
+
+    <!-- FOOTER -->
 
     <footer class="badge">
         <a href="https://github.com/mikel-egana-aranguren/EHU-GP-01">Fork me on GitHub</a>
