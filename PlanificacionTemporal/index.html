@@ -221,7 +221,7 @@
         <p>
             <ul>
                 <li>Earliest Event Time (EET)</li>
-                <li>Latest Event Time</li>
+                <li>Latest Event Time (LET)</li>
             </ul>
         </p>
     </section>
@@ -240,6 +240,53 @@
                 </li>
             </ul>
         </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): LET</h2>
+        <p><img src="pictures-gp-01/EET.png" alt="PERT EET" width="80%"></p>
+    </section>
+    
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): LET</h2>
+        <p>Para cada suceso, calcular:</p>
+        <p>
+            <ul>
+                <li>El LET del suceso inicial es igual a su EET</li>
+                <li>Para el resto de sucesos:
+                    <ul>
+                        <li>Para cada actividad que sale del suceso restar su duración al LET del suceso al que llegan</li>
+                        <li>Seleccionar el menor LET que se haya obtenido</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): EET</h2>
+        <p><img src="pictures-gp-01/LET.png" alt="PERT LET" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): Holgura Libre</h2>
+        <p>Holgura libre de una tarea: Tiempo que resulta de restar al EET del suceso final la suma del EET del suceso inicial y la duración de esa tarea</p>
+        <p>\[ H_{ij}^L = EET_j - (EET_i + D_{ij}) \]</p>
+        <p>Indica el número de unidades de tiempo que puede retrasarse la realización de una tarea sin afectar a la fecha final del proyecto NI a la fecha de inicio de otras actividades </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): Holgura Total</h2>
+        <p>Holgura Total de una tarea: Tiempo que resulta de restar al LET del suceso final la suma del EET del suceso inicial y la duración de esa tarea</p>
+        <p>\[ H_{ij} = LET_j - (EET_i + D_{ij}) \]</p>
+        <p>Indica el número de unidades de tiempo que puede retrasarse la realización de una tarea sin afectar a la duración de un proyecto </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación (PERT): Cálculo Holguras</h2>
+        <p>Si TODAS las actividades de salida del suceso N son ficticias, dicho suceso no se tendrá en cuenta</p>
+        <p>En su lugar se usarán los tiempos del nodo al que llegue la tarea ficticia. Si hubiera más de uno, se elegirá el nodo que haya impuesto el LET del suceso N.</p>
+        <p>Aunque añadir tareas ficticias no es un error en sí mismo, esta práctica dificulta los cálculos a realizar y por tanto no está recomendada</p>
     </section>
 
     <footer class="badge">
