@@ -342,19 +342,53 @@
     <section class="slide" id="cover">
         <h2>Planificación Temporal (ROY): Tipos de Precedencias</h2>
         <p>ROY también usa la tabla de precedencias o la matriz de encadenamientos</p>
-        <img src="pictures-gp-01/MatrizEncadenamientos.png" alt="MAtriz encadenamientos" width="80%">
+        <img src="pictures-gp-01/PrecedenciasROY.png" alt="Precedencias ROY" width="30%">
     </section>
 
     <section class="slide" id="cover">
         <h2>Planificación Temporal (ROY)</h2>
-        <p>Cada nodo se representa mediant un cuadrado, donce:
+        <p>Cada nodo se representa mediante un cuadrado, donde: </p>
+        <p><img src="pictures-gp-01/NodoROY.png" alt="Nodo Roy" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>Sobre los arcos, la duración de la actividad de la que sale el arco (Puede incluir demora)</p>
+        <p>El tiempo mínimo de comienzo se calcula:
             <ul>
-                <li>1: código de actividad</li>
-                <li>2: Tiempo mínimo de comienzo (t)</li>
-                <li>3: Tiempo máximo de comienzo (T)</li>
-                <li>4: Duración de la actividad ()</li>
+                <li>Sumando para cada arco que llegue a la actividad, el tiempo mínimo de comienzo de la actividad de la que sale y el valor del arco</li>
+                <li>Eligiendo el máximo de las sumas anteriores</li>
             </ul>
         </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>El tiempo máximo de comienzo se calcula:
+            <ul>
+                <li>Restando, para cada arco que sale de la actividad, su valor al tiempo máximo de comienzo de la actividad a la que llega</li>
+                <li>Eligiendo el mínimo de las sumas anteriores</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>A,D,C preceden a E; B precede a D</p>
+        <p><img src="pictures-gp-01/GrafoROY.png" alt="Grafo Roy" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>La holgura total de una tarea K es la diferencia entre sus tiempos máximo y mínimo:</p>
+        <p>\[ H_{k} = T_{k} - t_{k} \]</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal (ROY)</h2>
+        <p>La holgura libre de una actividad K viene dada por la fórmula:</p>
+        <p>\[ H_{K}^L = min[t_{P} - t_{K} - D_{KP}]\forall P \]</p>
+        <p>Dónde <i>P</i> son las actividades que siguen a K y D<sub>kp</sub> es el valor del arco que une las tareas K y P</p>
     </section>
 
     <!-- FOOTER -->
