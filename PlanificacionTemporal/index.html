@@ -420,8 +420,107 @@
 
     <section class="slide" id="cover">
         <h2>Planificación Temporal: Precedencias</h2>
-        <p>Fin - Comienzo con demora D (B solo puede comnzar D unidades después de que haya finalizado A) </p>
+        <p>Fin - Comienzo con demora D: B solo puede comenzar D unidades después de que haya finalizado A </p>
         <p><img src="pictures-gp-01/PrecedenciaFC.png" alt="Precedencia Fin Comienzo con demora D" width="80%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Comienzo - Comienzo con demora D: B solo puede comenzar D unidades después de que haya comenzado A </p>
+        <p><img src="pictures-gp-01/PrecedenciaCC.png" alt="Precedencia Comienzo Comienzo con demora D" width="65%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Fin - Fin con demora D: B solo puede terminar D unidades después de haber terminado A </p>
+        <p><img src="pictures-gp-01/PrecedenciaFF.png" alt="Precedencia Fin Fin con demora D" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Comienzo - Fin con demora D: B solo puede terminar D unidades después de haber comenzado A </p>
+        <p><img src="pictures-gp-01/PrecedenciaCF.png" alt="Precedencia Comienzo Fin con demora D" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Metodología: 
+            <ul>
+                <li>Se identifican las actividades iniciales</li>
+                <li>Se completa el grafo siguiendo las relaciones que marcan la secuencia de ejecución de las actividades</li>
+                <li>Si existen fechas planificadas o impuestas, se reflejan</li>
+                <li>Se indican las demoras</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Primero calculamos ES y EF: 
+            <ul>
+                <li>Para tareas iniciales: ES=0, EF= su duración</li>
+                <li>Para el resto (ej. tarea X): Mirar las tareas precedentes de X y las fechas impuestas de X. Por cada caso calcular un ES y EF </li>
+                <li>El par (ES, EF) <u>mayor</u> serám el ES y el EF de la tarea X</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Cálculo de ES y EF de la tarea X: 
+            <ul>
+                <li>Precedencias CC (Tarea A): ES(X)_a=ES(A)+Da; EF(X)_a=ES(X)_a+Ix</li>
+                <li>Precedencias FC (Tarea B): ES(X)_b=EF(B)+Db; EF(X)_b=ES(X)_b+Ix</li>
+                <li>Precedencias CF (Tarea C): EF(X)_c=ES(C)+Dc; ES(X)_c=EF(X)_c-Ix</li>
+                <li>Precedencias FF (Tarea D): EF(X)_d=ES(D)+Dd; ES(X)_d=EF(X)_d-Ix</li>
+                <li>PS: ES(X)_ps=PS; EF(X)_ps=ES(X)_ps+Ix</li>
+                <li>PF: EF(X)_pf=PF; ES(X_pf)=EF(X)_pf-Ix</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Cálculo de ES y EF de la tarea X: </p>
+        <p><img src="pictures-gp-01/ESEFX.png" alt="Cálculo de ES y EF de la tarea X" width="55%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Luego calcularemos LS y LF: 
+            <ul>
+                <li>Para las tareas finales:
+                    <ul>
+                        <li>LF = EF mayor del diagrama</li>
+                        <li>LS = LF - duración de actividad</li>
+                    </ul>
+                </li>
+                <li>Para el resto (ej. tarea X): mirar tareas siguientes de X y fechas impuestas de X. Por cada caso calcular un LS y LF</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Luego calcularemos LS y LF (cont.): 
+            <ul>
+                <li>El par (LS,LF) menor serán el LS y LF de X (Hay una excepción: Siempre debe cumplirse que ES<=LS y EF<=LF, pero a veces debido a las fechas impuestas no se cumplirá y debemos corregirlo, ejercicio 1)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Cálculo de LS y LF de la tarea X: 
+            <ul>
+                <li>Precedencias CC (Tarea A): LS(X)_a=LS(A)-Da; LF(X)_a=LS(X)_a+Ix</li>
+                <li>Precedencias FC (Tarea B): LF(X)_b=LS(B)-Db; LS(X)_b=LF(X)_b-Ix</li>
+                <li>Precedencias CF (Tarea C): LS(X)_c=LF(C)-Dc; LF(X)_c=LS(X)_c+Ix</li>
+                <li>Precedencias FF (Tarea D): LF(X)_d=LF(D)-Dd; LS(X)_d=LF(X)_d-Ix</li>
+                <li>PS: LS(X)_ps=PS; LF(X)_ps=LS(X)_ps+Ix</li>
+                <li>PF: LF(X)_pf=PF; LS(X)_pf=EF(X)_pf-Ix</li>
+            </ul>
+        </p>
     </section>
 
     <!-- FOOTER -->
