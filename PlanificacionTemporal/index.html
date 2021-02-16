@@ -136,7 +136,7 @@
 
     <section class="slide" id="cover">
         <h2>Recoger Precedencias</h2>
-        <p><b>Cuadro de precedentes</b>: tareas, precedentes</p>
+        <p><b>Cuadro de precedentes</b></p>
         <img src="pictures-gp-01/CuadroPrecedentes.png" alt="Cuadro de precedentes" width="30%">
     </section>
 
@@ -144,7 +144,7 @@
         <h2>Actividades Ficticias</h2>
         <p>Actividades que no consumen tiempo ni recursos (Reflejan relaciones entre actividades)</p>
         <p>Se usan cuando dos o más actividades tienen algunas precedentes comunes, pero no todas (A y B preceden a C, pero B sólo precede a D)</p>
-        <p>Tenemos a la vez relaciones lineales (B --> D) y convergentes (A,B --> C) o divergentes. </p>
+        <p>Tenemos a la vez relaciones lineales (B --> D) y convergentes (A,B --> C) o divergentes </p>
     </section>
 
     <section class="slide" id="cover">
@@ -154,8 +154,8 @@
 
     <section class="slide" id="cover">
         <h2>Actividades Ficticias</h2>
-        <p>Se usan cuando entre dos sucesos se desarrollan varias actividades.</p>
-        <p>Por ejemplo A, B, y C preceden a D (Tenemos actividades paralelas entre dos sucesos). </p>
+        <p>Se usan cuando entre dos sucesos se desarrollan varias actividades</p>
+        <p>Por ejemplo A, B, y C preceden a D (Tenemos actividades paralelas entre dos sucesos)</p>
     </section>
 
     <section class="slide" id="cover">
@@ -285,7 +285,7 @@
     <section class="slide" id="cover">
         <h2>Planificación (PERT): Cálculo Holguras</h2>
         <p>Si TODAS las actividades de salida del suceso N son ficticias, dicho suceso no se tendrá en cuenta</p>
-        <p>En su lugar se usarán los tiempos del nodo al que llegue la tarea ficticia. Si hubiera más de uno, se elegirá el nodo que haya impuesto el LET del suceso N.</p>
+        <p>En su lugar se usarán los tiempos del nodo al que llegue la tarea ficticia. Si hubiera más de uno, se elegirá el nodo que haya impuesto el LET del suceso N</p>
         <p>Aunque añadir tareas ficticias no es un error en sí mismo, esta práctica dificulta los cálculos a realizar y por tanto no está recomendada</p>
     </section>
 
@@ -460,7 +460,7 @@
             <ul>
                 <li>Para tareas iniciales: ES=0, EF= su duración</li>
                 <li>Para el resto (ej. tarea X): Mirar las tareas precedentes de X y las fechas impuestas de X. Por cada caso calcular un ES y EF </li>
-                <li>El par (ES, EF) <u>mayor</u> serám el ES y el EF de la tarea X</li>
+                <li>El par (ES, EF) <u>mayor</u> será el ES y el EF de la tarea X</li>
             </ul>
         </p>
     </section>
@@ -536,6 +536,14 @@
                 <li>Holgura total de la tarea K
                     \[ H_{K}^T = LF_{K} - EF_{K} \]
                 </li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Planificación Temporal: Precedencias</h2>
+        <p>Cálculo de holgura de tareas: 
+            <ul>
                 <li>La holgura libre de una tarea cualquiera se fija obteniendo el mínimo del resultado de calcular:
                     <ul>
                         <li>ES (siguiente) - (EF + D), si relación FC </li>
