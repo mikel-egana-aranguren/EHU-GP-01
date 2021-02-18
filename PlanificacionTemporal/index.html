@@ -23,6 +23,8 @@
         <p>Mikel Egaña Aranguren</p>
     </header>
 
+    <!-- Dia 1-->
+
     <section class="slide" id="cover">
         <h2>Gestión de Proyectos (GP)</h2>
         <h3>Planificación Temporal: Gantt, PERT, CPM, ROY, Precedencias</h3>
@@ -313,6 +315,8 @@
         <p>CPM es determinista y PERT probabilístico</p>
     </section>
 
+    <!-- Dia 2-->
+
     <section class="slide" id="cover">
         <h2>Planificación Temporal: ROY</h2>
         <p>También se construye un grafo, pero:
@@ -391,6 +395,8 @@
         <p>Dónde <i>P</i> son las actividades que siguen a K y D<sub>kp</sub> es el valor del arco que une las tareas K y P</p>
     </section>
 
+    <!-- Dia 3-->
+
     <section class="slide" id="cover">
         <h2>Planificación Temporal: Precedencias</h2>
         <p>El grafo de actividades es como el ROY:
@@ -459,7 +465,7 @@
         <p>Primero calculamos ES y EF: 
             <ul>
                 <li>Para tareas iniciales: ES=0, EF= su duración</li>
-                <li>Para el resto (ej. tarea X): Mirar las tareas precedentes de X y las fechas impuestas de X. Por cada caso calcular un ES y EF </li>
+                <li>Para el resto (ej. tarea X): Mirar las tareas precedentes de X y las fechas impuestas de X. Por cada caso calcular un ES y EF (Siguiente transparencia) </li>
                 <li>El par (ES, EF) <u>mayor</u> será el ES y el EF de la tarea X</li>
             </ul>
         </p>
@@ -533,7 +539,7 @@
         <h2>Planificación Temporal: Precedencias</h2>
         <p>Cálculo de holgura de tareas: 
             <ul>
-                <li>Holgura total de la tarea K
+                <li>Holgura total de la tarea K:
                     \[ H_{K}^T = LF_{K} - EF_{K} \]
                 </li>
             </ul>
