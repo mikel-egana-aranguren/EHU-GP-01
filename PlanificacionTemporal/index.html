@@ -204,7 +204,7 @@
         <p>
             <ul>
                 <li>E<sub>O</sub> = Estimación optimista</li>
-                <li>E<sub>M</sub> = Estimación más probable (modal)</li>
+                <li>E<sub>M</sub> = Estimación más probable</li>
                 <li>E<sub>P</sub> = Estimación pesimista</li>
             </ul>
         </p>
@@ -222,8 +222,8 @@
         <p>Para cada suceso, calcular:</p>
         <p>
             <ul>
-                <li>Earliest Event Time (EET)</li>
-                <li>Latest Event Time (LET)</li>
+                <li>Earliest Event Time (EET): el tiempo más cercano al inicio en el que la tarea puede ejecutarse</li>
+                <li>Latest Event Time (LET): el tiempo más cercano al final en el que la tarea puede ejecutarse sin demorar el proyecto</li>
             </ul>
         </p>
     </section>
@@ -237,7 +237,7 @@
                 <li>Para el resto de sucesos:
                     <ul>
                         <li>Para cada actividad que llega al suceso, sumar la duración de la actividad y el EET del suceso del que sale</li>
-                        <li>Seleccionar el mayor EET que se haya obtenido</li>
+                        <li>Si hay varios, seleccionar el mayor EET que se haya obtenido</li>
                     </ul>
                 </li>
             </ul>
@@ -254,11 +254,11 @@
         <p>Para cada suceso, calcular:</p>
         <p>
             <ul>
-                <li>El LET del suceso inicial es igual a su EET</li>
+                <li>El LET del suceso final es igual a su EET</li>
                 <li>Para el resto de sucesos:
                     <ul>
                         <li>Para cada actividad que sale del suceso restar su duración al LET del suceso al que llegan</li>
-                        <li>Seleccionar el menor LET que se haya obtenido</li>
+                        <li>Si hay varios, seleccionar el menor LET que se haya obtenido</li>
                     </ul>
                 </li>
             </ul>
@@ -266,7 +266,7 @@
     </section>
 
     <section class="slide" id="cover">
-        <h2>Planificación (PERT): EET</h2>
+        <h2>Planificación (PERT): LET</h2>
         <p><img src="pictures-gp-01/LET.png" alt="PERT LET" width="80%"></p>
     </section>
 
