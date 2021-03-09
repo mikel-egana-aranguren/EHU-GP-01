@@ -276,9 +276,6 @@
                 <li>4º año: Q4=800</li>
             </ul>
         </p>
-        <p>Resultado
-            \[ ROI = \frac{(-200 + 600 + 550 + 800) - 1000}{4 \times 1000} \times 100 = 18,75% \]
-        </p>
     </section>
 
     <section class="slide" id="cover">
@@ -287,6 +284,125 @@
             \[ ROI = \frac{(-200 + 600 + 550 + 800) - 1000}{4 \times 1000} \times 100 = 18,75% \]
         </p>
     </section>
+
+    <section class="slide" id="cover">
+        <h2>El valor del dinero</h2>
+        <p>¿Quien me presta 100 Euros y se los reintegro dentro de un año?</p>
+        <p>¿Quien me presta 100 Euros y le reintegro 300 dentro de un año?</p>
+        <p>Evidentemente, disponer del dinero hoy tiene un coste</p>
+        <p>Los métodos estáticos no lo tienen en cuenta, los dinámicos sí</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Actualización de un importe en un periodo cualquiera</h2>
+        <p>Para actualizar el valor del dinero:
+            \[ Futuro = Actual \times (1+i)^n \]
+            \[ Actual = Futuro \times (1+i)^-n \]
+        </p>
+        <p>i: tasa de interés en el periodo (en tanto por uno); n: número de periodos transcurridos</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>La tasa de interes "i"</h2>
+        <p>Hacemos un depósito en un banco, en el que se nos marca un retorno por período, así:
+            <ul>
+                <li>Si deposito 100 Euros hoy (Actual),</li>
+                <li>Se me reintegran 110 Euros en un año (Futuro)</li>
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>La tasa de interes "i"</h2>
+        <p>Llamamos interés a la razón entre el valor futuro y el valor actual:
+            \[ i = {Futuro \over Actual} = {110 \over 100} -1 = 0,1 \]
+        </p>
+        <p>En %: el 10% (en un año)</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>El valor de 1000 Euros actuales a un interés del 20%</h2>
+        <p><img src="pictures-gp-01/interes.png" alt="Interes a 10" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Valor de 1000 Euros vistos desde el momento actual (al 0,4% semanal)</h2>
+        <p><img src="pictures-gp-01/interes-reves.png" alt="Interes a 10" width="60%"></p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Tasa Interna de Rendimiento (TIR)</p>
+        <p>Se obtiene la tasa, r, que cumple:
+            \[ K = \sum_{j=1}^n {Q_j \over (1+r)^j} \]
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Tasa Interna de Rendimiento (TIR)</p>
+        <p>Serán viables los proyectos con r > tipo de interés</p>
+        <p>Cuanto mayor sea r, mejor será la inversión</p>
+        <p>Hay que adaptarla con flujos de caja negativos (no lo veremos)</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Tasa Interna de Rendimiento (TIR)</p>
+        <p>Calcula el TIR para el siguiente proyecto de inversión:
+            <ul>
+                <li>Inversión=100</li>
+                <li>1er año: Q1=20</li>
+                <li>2º año: Q2=160</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Resultado:
+            \[ 100 = {20 \over 1+r } + {160 \over (1+r)^2} \]
+            \[ 100(1+r)^2 - 20(1+r) - 160 = 0 \]
+            \[ r = {20+253,77 \over 200}-1 = 0,369 \]
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Criterio del Valor Actual Neto (VAN)</p>
+        <p>Se calcula con:
+            \[ VAN=-K+\sum_{j=1}^n{Q_j \over (1+r)^j} \]
+        </p>
+        <p>El VAN representa la ganancia neta</p>
+        <p>Si el VAN es mayor que cero, el proyecto es viable</p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Criterio del Valor Actual Neto (VAN)</p>
+        <p>Calcula el VAN para el siguiente proyecto de inversión:
+            <ul>
+                <li>Inversión=100</li>
+                <li>Tasa de rendimiento:10%</li>
+                <li>1er año: Q1=20</li>
+                <li>2º año: Q2=60</li>
+                <li>3er año: Q3=55</li>
+                <li>4º año: Q4=80</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Rentabilidad de un proyecto</h2>
+        <p>Criterio del Valor Actual Neto (VAN)</p>
+        <p>Resultado:
+            \[ -100+{20 \over (1+0,1)}+{60 \over (1+0,1)^2}+{55 \over (1+0,1)^3}+{80 \over (1+0,1)^4}=63,73 \]
+        </p>
+    </section>
+
+
+
 
     <!-- FOOTER -->
 
