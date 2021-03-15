@@ -12,6 +12,6 @@ Temario:
 4. Objetivos y alcance
 5. Estimación
 6. [Planificación temporal](PlanificacionTemporal/index.html)
-7. Riesgos
+7. [Riesgos](Riesgos/index.html)
 8. [Evaluación económica](EvaluacionEconomica/index.html)
 9. Seguimiento y control
