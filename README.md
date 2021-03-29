@@ -14,4 +14,4 @@ Temario:
 6. [Planificación temporal](PlanificacionTemporal/index.html)
 7. [Riesgos](Riesgos/index.html)
 8. [Evaluación económica](EvaluacionEconomica/index.html)
-9. Seguimiento y control
+9. [Seguimiento y control](SeguimientoYControl/index.html)
